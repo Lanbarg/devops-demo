@@ -1,0 +1,12 @@
+- name: Deploy
+  hosts: app
+  become: true
+  roles:
+    - app_server
+
+- name: Monitoring + log
+  hosts: infra
+  become: true
+  roles:
+    - elk_stack
+    - prometheus_stack
