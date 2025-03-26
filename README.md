@@ -1,2 +1,2 @@
 # devops-demo
-ELK+PG+NGINX
+ELK+PG+Reverse Proxy(nginx)
