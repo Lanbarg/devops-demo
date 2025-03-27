@@ -31,4 +31,4 @@
 - name: Up docker-compose
   shell: docker-compose up -d --build
   args:
-    chdir: /opt/app_server 
+    chdir: /opt/app_server
