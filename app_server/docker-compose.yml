@@ -4,9 +4,11 @@ services:
 
   test_app:
     build: ./test_app
+    container_name: test-app
 
   nginx:
     image: nginx:latest
+    container_name: nginx
     ports:
       - "80:80"
     volumes:
@@ -16,6 +18,7 @@ services:
 
   nginx-prometheus-exporter:
     image: nginx/nginx-prometheus-exporter:latest
+    container_name: nginx-prom-exp
     command:
       - '--nginx.scrape-uri=http://nginx:80/nginx_status'
     ports:
