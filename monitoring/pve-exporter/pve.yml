@@ -1,0 +1,5 @@
+default:
+  verify_ssl: false  # если у тебя самоподписанный сертификат
+  user: test@pve
+  token_name: "testtoken"
+  token_value: "7cb68426-ad18-4fe2-8fd3-99f458da1b13"

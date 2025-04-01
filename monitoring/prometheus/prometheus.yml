@@ -24,4 +24,4 @@ scrape_configs:
       - source_labels: [__param_target]
         target_label: instance
       - target_label: __address__
-        replacement: 192.168.0.71:9221 # PVE address
+        replacement: 172.17.219.142:9221 # PVE address

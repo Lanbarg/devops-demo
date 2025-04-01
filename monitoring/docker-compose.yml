@@ -27,6 +27,6 @@ services:
     ports:
       - "9221:9221"
     volumes:
-      - ./pve-exporter/config.yml:/etc/prometheus/pve.yml:ro
+      - ./pve-exporter/pve.yml:/etc/prometheus/pve.yml:ro
 #    command: --config.file /config.yml
     restart: unless-stopped

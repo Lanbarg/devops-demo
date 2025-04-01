@@ -1,5 +1,0 @@
-default:
-  verify_ssl: false  # если у тебя самоподписанный сертификат
-  user: pve_exporter@pve
-  token_name: "toker_pve_exporter"
-  token_value: "dc491f74-cace-46ae-a07e-330dc57548e0"
