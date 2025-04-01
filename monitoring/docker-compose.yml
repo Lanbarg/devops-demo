@@ -20,3 +20,13 @@ services:
     volumes:
       - ./grafana/provisioning:/etc/grafana/provisioning:ro
     restart: unless-stopped
+
+  prometheus_pve_exporter:
+    image: prompve/prometheus-pve-exporter
+    container_name: pve-exporter
+    ports:
+      - "9221:9221"
+    volumes:
+      - ./pve-exporter/config.yml:/etc/prometheus/pve.yml:ro
+#    command: --config.file /config.yml
+    restart: unless-stopped
